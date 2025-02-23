@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whataburger Menu Item Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Whataburger Menu Item Generator</h1>
+        
+        <div class="menu-selection">
+            <label for="burger">Select your Burger:</label>
+            <select id="burger">
+                <option value="Classic Whataburger">Classic Whataburger</option>
+                <option value="Double Meat Whataburger">Double Meat Whataburger</option>
+                <option value="Chicken Sandwich">Chicken Sandwich</option>
+                <option value="Bacon Whataburger">Bacon Whataburger</option>
+            </select>
+            
+            <label for="side">Select your Side:</label>
+            <select id="side">
+                <option value="Fries">Fries</option>
+                <option value="Onion Rings">Onion Rings</option>
+                <option value="Apple Slices">Apple Slices</option>
+                <option value="Chili Cheese Fries">Chili Cheese Fries</option>
+            </select>
+
+            <label for="drink">Select your Drink:</label>
+            <select id="drink">
+                <option value="Coke">Coke</option>
+                <option value="Sprite">Sprite</option>
+                <option value="Milkshake (Chocolate)">Milkshake (Chocolate)</option>
+                <option value="Milkshake (Vanilla)">Milkshake (Vanilla)</option>
+            </select>
+        </div>
+
+        <button onclick="generateCombination()">Generate My Meal</button>
+
+        <div id="result" class="result"></div>
+        <div class="footer">
+            <p>For more Whataburger menu details, visit <a href="https://whatburgermenu.com" target="_blank">WhataburgerMenu</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
